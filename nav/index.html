@@ -11,11 +11,14 @@
   color: #2d2d2d;
   cursor: default;
 }
+    .logoContainer {padding: 10px 0px 0px 20px;}
+    .logo {height: 100px; cursor: pointer;}
 
 body {
   background-color: #fcfafc;
   padding: 0px;
 }
+    .cta {background: #0336ff; color:white; text-decoration: none; font-size: 20px; margin: 30px 0px 0px; display: inline-block; padding: 10px 20px; border-radius: 500px;}
 p{
   margin-top: .125rem;
   
@@ -137,8 +140,9 @@ input[type=checkbox]:checked ~ label .line-3 {
     </nav>
 </div>
 <div class="page-content">
-  <h1 class="logo">Your Company Logo</h1>
-  <div class="phone">1.555.5555</p>
+  <!--<h1 class="logo">Your Company Logo</h1>-->
+    <div class="logoContainer"><a href="/"><img class="logo" src="images/logo.svg"></a>  <div class="phone">1.555.5555</p></div>
+
 </div>
 
 
@@ -150,22 +154,14 @@ input[type=checkbox]:checked ~ label .line-3 {
 }
 
 .header {
-  margin: 100px auto 0 auto;
+  margin: 00px auto 0 auto;
   height: 400px;
   overflow: hidden;
   text-align: center;
   position: relative;
 }
-@media (min-width: 480px) {
-  .header {
-    width: 480px;
-  }
-}
-@media (min-width: 960px) {
-  .header {
-    width: 960px;
-  }
-}
+
+
 
 .header__title {
   font-size: 32px;
@@ -592,8 +588,9 @@ input[type=checkbox]:checked ~ label .line-3 {
 }
     </STYLE>
     
-    <div style="padding:30px;">
-        <h1>We make websites you can understand  and afford</h1>
+    <div style="padding:30px 30px 0px;">
+        <h1>We make websites and products you can understand  and afford</h1>
+        <a class="cta" href="">Get Started</a>
     </div>
     <header class="header">
   <h1 class="header__title"></h1>
