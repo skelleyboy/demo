@@ -20,8 +20,9 @@ body {
   background-color: #fcfafc;
   padding: 0px;
 }
-    .cta {transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
-    .cta:hover {transition: all ease .2s; background: green; }
+    .cta {font-weight: 700; transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
+    .cta:hover {transition: all ease .2s;color:black; background: rgba(38, 255, 65, 1); }
+    .ctaTwo  {background: #ee0255; display: block; max-width: 280px; margin: -70px auto 0px; text-align: center;}
 p{
   margin-top: .125rem;
   
@@ -176,10 +177,11 @@ input[type=checkbox]:checked ~ label .line-3 {
   z-index: 2;
     padding: 0px 30px;
 }
-                .steps {background: #0336ff; color:#fff; list-style: none; text-align: center; padding: 40px 30px 40px;}
+        .stepsContainer {background: #0336ff;padding: 40px 30px 40px;}
+                .steps { color:#fff; list-style: none; text-align: center; }
         .steps h2 {font-size: 32px;margin:-45px 0px 10px;}
         .steps li {padding-bottom: 120px;font-size: 18px;}
-    .steps span {margin-top:-115px;outline: 10px solid rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:black; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
+    .steps span {margin-top:-115px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:black; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
 @media (min-width: 480px) {
   .header__title {
     font-size: 64px;
@@ -191,6 +193,9 @@ input[type=checkbox]:checked ~ label .line-3 {
   }
     .steps h2 {margin-bottom: 20px;}
     .steps li {display: inline-block; width: 20%; padding: 0px 30px; }
+    .ctaTwo  { margin: 50px auto 0px ;}
+    .ctaTwo:hover  {-webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
+p{
    
 }
 
@@ -612,7 +617,7 @@ input[type=checkbox]:checked ~ label .line-3 {
         <h1 class="header__title">We guide you through our simple process to get your business online</h1>
 </header>
     
-
+<DIV class="stepsContainer">
 <ul class="steps">
     <li>
         <SPAN>1</SPAN>
@@ -630,6 +635,8 @@ input[type=checkbox]:checked ~ label .line-3 {
     <P>We monitor your traffic and share the results</P>
     </li>    
 </ul>
+    <a class="cta ctaTwo" href="">Get Started</a>
+    </DIV>
 <BR><BR><BR><BR><BR>
 
 
