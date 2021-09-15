@@ -190,7 +190,22 @@ input[type=checkbox]:checked ~ label .line-3 {
         .steps li {padding-bottom: 50px;font-size: 24px;}
     .steps span {margin-top:5px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:black; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
 
+        .quote{; font-size: 24px;
+  position: relative;
+  margin: 4rem 2rem 4rem 4rem;
+    max-width: 850px;
+}
+.quote::before {
+  content: open-quote;
+  position: absolute;
+  left: -3.5rem;
+  top: 0;
+  font-size: 8rem;
+  color: rgba(0, 0, 0, 0.1);
+    font-family: times;
+}
 @media (min-width: 1025px) {
+    .quote {margin: 100px auto 150px; line-height: 42px;}
     .blurb div {width:500px; display: inline-block;}
     .blurb  img {max-width: 800px;}
     nav {text-align: center;}
@@ -662,6 +677,11 @@ input[type=checkbox]:checked ~ label .line-3 {
             </LI>
         </UL>
     </DIV>
+
+
+<DIV class="quote">
+Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have Qball work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="float:right; font-weight: bold; color: rgba(0, 0, 0, 0.5); margin: 30px 0px;"> - Regroup.com</DIV>
+</DIV>
     
     <DIV CLASS="sampleBg">
     </DIV>
