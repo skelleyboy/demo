@@ -10,18 +10,21 @@
   font-family: 'Montserrat', sans-serif;
   cursor: default;
 }
+    .ourServices {max-width: 800px; margin: auto; padding: 30px;}
+    .ourServices h2 {font-size:  42px;}
+    .sampleBg  {background-image: url('images/example.png' ); height: 320px;  background-repeat: no-repeat; background-size: cover;  background-position: top center; }
     .number {text-align: right; background: black; font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
     .logoContainer {padding: 10px 0px 0px 15px;}
     .logo {height:100px; cursor: pointer;}
 
     .blurb {padding:30px 30px 0px; max-width:1480px; margin: auto;}
-    .blurb  img {max-width: 100%; float: left}
+    .blurb  img {max-width: 100%; float: left; position: relative; z-index: 9998}
 body {
   background-color: #fff;
   padding: 0px;
 }
-    .cta {z-index: 9998; position: relative; font-weight: bold; transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 20px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
+    .cta {z-index: 9998; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); position: relative; font-weight: bold; transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
     .cta:hover {transition: all ease .2s;color:black; background:  rgba(38, 255, 65, 1); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
     .ctaTwo  {background: #ee0255; display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
 p{
@@ -39,7 +42,7 @@ nav ul {
   max-height: 0px;
   overflow: hidden;
   list-style: none;
-  transition: all 1s cubic-bezier(.325, 1, .22, 1);
+  transition: all ease .2s;
   background:black;
 }
 
@@ -182,9 +185,9 @@ input[type=checkbox]:checked ~ label .line-3 {
     padding: 0px 30px;
 }
         .stepsContainer {background: #0336ff;padding: 40px 30px 40px;}
-                .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; }
+                .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
-        .steps li {padding-bottom: 50px;font-size: 18px;}
+        .steps li {padding-bottom: 50px;font-size: 24px;}
     .steps span {margin-top:5px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:black; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
 
 @media (min-width: 1025px) {
@@ -198,7 +201,7 @@ input[type=checkbox]:checked ~ label .line-3 {
     font-size: 52px; max-width: 1280px; margin: auto;
   }
     .steps h2 {margin-bottom: 20px;}
-    .steps li {display: inline-block; width: 270px; padding: 0px 60px; }
+    .steps li {display: inline-block; width: 320px; padding: 0px 60px; }
     .ctaTwo {margin-top: 50px;}
    
 }
@@ -610,7 +613,7 @@ input[type=checkbox]:checked ~ label .line-3 {
     
     <div class="blurb">
         <img src="images/sample_steve.png">
-        <DIV><h1>Qball makes websites and products you can understand  and afford</h1>
+        <DIV><h1>Qball makes websites and products that are easy to use</h1>
     <a class="cta" href="">Get Started</a></DIV>
     </div>
     <header class="header">
@@ -642,6 +645,27 @@ input[type=checkbox]:checked ~ label .line-3 {
 </ul>
     <a class="cta ctaTwo" href="">Get Started</a>
     </DIV>
+    
+    <DIV class="ourServices">
+        <h2>How we  can help</h2>
+        <UL>
+        <LI>Branding
+            
+            </LI>
+            <LI>Mobile Friendly Website  Design</LI>
+            <LI>Mobile Friendly Website  Design</LI>
+            <LI>Mobile Friendly Website  Design</LI>
+            <LI>Mobile Friendly Website  Design</LI>
+            <LI>Mobile Friendly Website  Design</LI>
+            <LI>Mobile Friendly Website  Design</LI>
+            
+            </LI>
+        </UL>
+    </DIV>
+    
+    <DIV CLASS="sampleBg">
+    </DIV>
+     <a class="cta ctaTwo" href="">Get Started</a>
 <BR><BR><BR><BR><BR>
 
 
