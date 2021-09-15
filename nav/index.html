@@ -15,12 +15,13 @@
     .logoContainer {padding: 10px 0px 0px 15px;}
     .logo {height:100px; cursor: pointer;}
 
-    .blurb {padding:30px 30px 0px; max-width: 700px; margin: auto;}
+    .blurb {padding:30px 30px 0px; max-width:1480px; margin: auto;}
+    .blurb  img {max-width: 100%; float: left}
 body {
-  background-color: #fcfafc;
+  background-color: #fff;
   padding: 0px;
 }
-    .cta {font-weight: bold; transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
+    .cta {z-index: 9998; position: relative; font-weight: bold; transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 20px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
     .cta:hover {transition: all ease .2s;color:black; background:  rgba(38, 255, 65, 1); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
     .ctaTwo  {background: #ee0255; display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
 p{
@@ -162,7 +163,7 @@ input[type=checkbox]:checked ~ label .line-3 {
   height: 400px;
   overflow: hidden;
   text-align: center;
-  position: relative;
+  
 }
 
 
@@ -182,18 +183,16 @@ input[type=checkbox]:checked ~ label .line-3 {
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
         .steps li {padding-bottom: 50px;font-size: 18px;}
     .steps span {margin-top:5px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:black; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
-@media (min-width: 480px) {
-  .header__title {
-    font-size: 64px;
-  }
-}
-@media (min-width: 960px) {
+
+@media (min-width: 1025px) {
+    .blurb div {width:500px; display: inline-block;}
+    .blurb  img {max-width: 800px;}
     nav {text-align: center;}
     nav li {display: inline-block; border:0px;}
     nav li a  { padding: 15px 25px; transition: all ease .2s;}
     nav li a:hover {background: #0336ff; text-decoration: none;border-bottom:2px solid white;  transition: all ease .2s;}
   .header__title {
-    font-size: 64px; max-width: 1280px; margin: auto;
+    font-size: 52px; max-width: 1280px; margin: auto;
   }
     .steps h2 {margin-bottom: 20px;}
     .steps li {display: inline-block; width: 270px; padding: 0px 60px; }
@@ -607,8 +606,9 @@ input[type=checkbox]:checked ~ label .line-3 {
     </STYLE>
     
     <div class="blurb">
-        <h1>Qball makes websites and products you can understand  and afford</h1>
-        <a class="cta" href="">Get Started</a>
+        <img src="images/sample_steve.png">
+        <DIV><h1>Qball makes websites and products you can understand  and afford</h1>
+    <a class="cta" href="">Get Started</a></DIV>
     </div>
     <header class="header">
   
