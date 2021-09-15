@@ -58,6 +58,8 @@ nav li:last-of-type {
 nav li a {
   text-decoration: none;
   color:#fff;
+    position: relative;
+    z-index: 9999;
 }
 nav li a:hover{
   text-decoration: underline;
@@ -79,6 +81,7 @@ input[type=checkbox]:checked ~ nav ul {
   transition: all 1s cubic-bezier(.19, 1, .22, 1);
   background:black;
   border:1px solid white;
+    z-index: 9999;
 }
 
 .line {
