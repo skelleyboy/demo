@@ -13,19 +13,20 @@
     .ourServices {max-width: 800px; margin: auto; padding: 30px;}
     .ourServices h2 {font-size:  42px;}
     .sampleBg  {background-image: url('images/example.png' ); height: 320px;  background-repeat: no-repeat; background-size: cover;  background-position: top center; }
-    .number {text-align: right; background: black; font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
+    .number {text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
     .logoContainer {padding: 10px 0px 0px 15px;}
     .logo {height:100px; cursor: pointer;}
+    
 
-    .blurb {padding:30px 30px 0px; max-width:1480px; margin: auto;}
-    .blurb  img {max-width: 100%; float: left; position: relative; z-index: 9998}
+    .blurb {padding:30px 30px 0px; max-width:1480px; margin: auto;position: relative; z-index: 9998}
+    .blurb  img {max-width: 100%; float: left;}
 body {
   background-color: #fff;
   padding: 0px;
 }
     .cta {z-index: 9998; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); position: relative; font-weight: bold; transition: all ease .2s; background: #0336ff; color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
-    .cta:hover {transition: all ease .2s;color:black; background:  rgba(38, 255, 65, 1); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
+    .cta:hover {transition: all ease .2s;color:rgba(0,0,0,.9); background:  rgba(38, 255, 65, 1); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
     .ctaTwo  {background: #ee0255; display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
 p{
   margin-top: .125rem;
@@ -43,7 +44,7 @@ nav ul {
   overflow: hidden;
   list-style: none;
   transition: all ease .2s;
-  background:black;
+  background:rgba(0,0,0,.9);
 }
 
 nav li {
@@ -82,7 +83,7 @@ input[type=checkbox]:checked ~ nav ul {
   width: 41px;
   cursor: pointer;
   transition: all 1s cubic-bezier(.19, 1, .22, 1);
-  background:black;
+  background:rgba(0,0,0,.9);
   border:1px solid white;
     z-index: 9999;
 }
@@ -177,19 +178,19 @@ input[type=checkbox]:checked ~ label .line-3 {
 .header__title {
   font-size: 28px;
   font-weight: bold;
-  color: #111;
+  color: rgba(0,0,0,.9);
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 9999;
     padding: 0px 30px;
 }
         .stepsContainer {background: #0336ff;padding: 40px 30px 40px;}
                 .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
         .steps li {padding-bottom: 50px;font-size: 24px;}
-    .steps span {margin-top:5px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:black; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
-
+    .steps span {margin-top:5px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:rgba(0,0,0,.9); padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
+        .quoteContainer  {background: #f1f1f1; padding: 10px;}
         .quote{; font-size: 24px;
   position: relative;
   margin: 4rem 2rem 4rem 4rem;
@@ -204,8 +205,17 @@ input[type=checkbox]:checked ~ label .line-3 {
   color: rgba(0, 0, 0, 0.1);
     font-family: times;
 }
+       
+    .ourClients {text-align: center;}
+    .ourClients  ul {list-style: none;}
+    .ourClients li {margin:30px 0px; vertical-align: top;}
+    .ourClients img {max-width: 180px}
+    .ourClients h2 {font-size:  42px; border-top:1px solid #eee;margin-top: 0px; padding-top:60px;}
+
+
 @media (min-width: 1025px) {
-    .quote {margin: 100px auto 150px; line-height: 42px;}
+    .ourClients li {display: inline-block; padding: 25px;}
+    .quote {margin: 120px auto; line-height: 42px;}
     .blurb div {width:500px; display: inline-block;}
     .blurb  img {max-width: 800px;}
     nav {text-align: center;}
@@ -628,7 +638,7 @@ input[type=checkbox]:checked ~ label .line-3 {
     
     <div class="blurb">
         <img src="images/sample_steve.png">
-        <DIV><h1>Qball makes websites and products that are easy to use</h1>
+        <DIV><h1>Qball designs websites and apps that are easy to use</h1>
     <a class="cta" href="">Get Started</a></DIV>
     </div>
     <header class="header">
@@ -637,7 +647,7 @@ input[type=checkbox]:checked ~ label .line-3 {
   <div class="header__shape triangle--blue"></div>
   <div class="header__shape circle--green"></div>
   <div class="header__shape trap--yellow"></div>
-        <h1 class="header__title">We guide you through our simple process to get your business online</h1>
+        <h1 class="header__title">We guide you through our simple three step process </h1>
 </header>
     
 <DIV class="stepsContainer">
@@ -661,61 +671,49 @@ input[type=checkbox]:checked ~ label .line-3 {
     <a class="cta ctaTwo" href="">Get Started</a>
     </DIV>
     
-    <DIV class="ourServices">
-        <h2>How we  can help</h2>
-        <UL>
-        <LI>Branding
-            
-            </LI>
-            <LI>Mobile Friendly Website  Design</LI>
-            <LI>Mobile Friendly Website  Design</LI>
-            <LI>Mobile Friendly Website  Design</LI>
-            <LI>Mobile Friendly Website  Design</LI>
-            <LI>Mobile Friendly Website  Design</LI>
-            <LI>Mobile Friendly Website  Design</LI>
-            
-            </LI>
-        </UL>
+    
+
+<DIV class="quoteContainer">
+<DIV class="quote">
+Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have Qball work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="text-align:right; font-weight: bold; color: rgba(0, 0, 0, 0.5); margin: 30px 0px;"> - Regroup.com</DIV>
+</DIV>
     </DIV>
 
+    <DIV class="ourClients">
+        <h2>Past Clients</h2>
+        <UL>
+             <LI><img src="images/client_contigo.png"></LI>
+             <LI><img src="images/client_physiq.png"></LI>
+             <LI><img src="images/client_bosch.png"></LI>
+             <LI><img src="images/client_constellation.png"></LI>
+                  <LI><img src="images/client_magnuson.png"></LI>
+                         <LI><img src="images/client_openhotel.png"></LI>
 
-<DIV class="quote">
-Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have Qball work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="float:right; font-weight: bold; color: rgba(0, 0, 0, 0.5); margin: 30px 0px;"> - Regroup.com</DIV>
-</DIV>
+
+        </UL>
+    </DIV>
     
     <DIV CLASS="sampleBg">
     </DIV>
      <a class="cta ctaTwo" href="">Get Started</a>
 <BR><BR><BR><BR><BR>
+    
+    
+    <DIV class="ourServices">
+        <h2>How we  can help</h2>
+        <UL>
+            <LI>Android and iOS App Design</LI>
+            <LI>Mobile Friendly Web Design</LI>
+            <LI>Web Application Design</LI>
+            <LI>Design Systems</LI>
+            <LI>Invision Prototypes</LI>
+            <LI>In Browser Design</LI>
+        </UL>
+    </DIV>
+    
+    
+    
 
-
-<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="https://gmail.us5.list-manage.com/subscribe/post?u=046db435ca9cdad79e9c44fe7&amp;id=f3034164f4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>Subscribe</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_046db435ca9cdad79e9c44fe7_f3034164f4" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgNIvNymQzNN39a76IC2bp3ml5y5psuoFDiH4cJBML84EatQ/viewform?embedded=true" width="100%" height="700px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     
 </BODY>
