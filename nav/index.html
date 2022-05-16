@@ -13,12 +13,13 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   cursor: default;
+    transition: all ease .2s;
 }
     
     
     :root {
   --primary: blue;
-        --primary-hover: red;
+        --primary-hover: white;
 }
     .ourServices {max-width: 800px; margin: auto; padding: 30px;}
     .ourServices h2 {font-size:  42px;}
@@ -35,8 +36,8 @@ body {
   background-color: #fff;
   padding: 0px;
 }
-    .cta {z-index: 9998; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); position: relative; font-weight: bold; transition: all ease .2s; background: var(--primary); color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
-    .cta:hover {transition: all ease .2s;color:rgba(0,0,0,.9); background:var(--primary-hover); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
+    .cta {z-index: 9998; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); position: relative; font-weight: bold; background: var(--primary); color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
+    .cta:hover {color:rgba(0,0,0,.9); background:var(--primary-hover); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
     .ctaTwo  {display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
 p{
   margin-top: .125rem;
@@ -53,7 +54,6 @@ nav ul {
   max-height: 0px;
   overflow: hidden;
   list-style: none;
-  transition: all ease .2s;
   background:rgba(0,0,0,.9);
 }
 
@@ -201,9 +201,10 @@ input[type=checkbox]:checked ~ label .line-3 {
                 .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
         .steps li {padding-bottom: 50px;font-size: 20px;}
-    .steps span {margin-top:5px; border:1px solid #ccc; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  var(--primary);line-height: 30px; color:white; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
-        .quoteContainer  {background: #f1f1f1; padding: 10px;}
-        .quote{; font-size: 24px;
+    .steps span {margin-top:5px; border:1px solid #ccc; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  #666;line-height: 30px; color:white; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
+        .steps span:hover {margin-top: -10px; background: #999;}
+        .quoteContainer  {background:rgba(17,17,17,.9); padding: 10px; margin-top: 60px;}
+        .quote{color:white;z-index: 2; position: absolute;font-size: 18px;
   position: relative;
   margin: 4rem 2rem 4rem 4rem;
     max-width: 850px;
@@ -212,10 +213,11 @@ input[type=checkbox]:checked ~ label .line-3 {
   content: open-quote;
   position: absolute;
   left: -3.5rem;
-  top: 0;
-  font-size: 8rem;
-  color: rgba(0, 0, 0, 0.1);
+  top: -4.7rem;
+  font-size: 18rem;
+  color: rgba(0, 0, 0, 0.3);
     font-family: times;
+    z-index: -1;
 }
        
     .ourClients {text-align: center; background: white;}
@@ -227,21 +229,25 @@ input[type=checkbox]:checked ~ label .line-3 {
 
 @media (min-width: 1025px) {
     .ourClients li {display: inline-block; padding: 25px;}
-    .quote {margin: 120px auto; line-height: 42px;}
+    .quoteContainer {border: 40px solid black;}
+    .quote {margin: 120px auto; line-height: 42px;font-size: 32px;}
     .topContent {margin: auto; max-width: 1200px;}
     .blurb {max-width:47%; vertical-align: top; margin: auto;  display: inline-block}
+    .blurb h1:hover {margin-top: -10px;}
     .mainImage {max-width: 52%;  display: inline-block}
+    .mainImage:hover {margin: 40px  0px 10px;}
     .blurb  img {max-width: 800px;}
     nav {text-align: center;}
     nav li {display: inline-block; border:0px;}
-    nav li a  { padding: 15px 25px; transition: all ease .2s;}
-    nav li a:hover {background: #0336ff; text-decoration: none;border-bottom:2px solid white;  transition: all ease .2s;}
+    nav li a  { padding: 15px 25px;}
+    nav li a:hover {background:var(--primary); text-decoration: none;border-bottom:2px solid white; }
   .header__title {
     font-size: 52px; max-width: 1280px; margin: auto;
   }
     .steps {max-width: 1200px;margin:-60px  auto 60px;}
     .steps h2 {margin: 10px 0px 20px;}
     .steps li {display: inline-block; max-width: 33%; padding: 0px 60px; }
+    .steps h2:hover, .steps p:hover {margin-top: -10px;}
     .ctaTwo {margin-top: 50px;}
    
 }
@@ -289,6 +295,11 @@ input[type=checkbox]:checked ~ label .line-3 {
   }
 }
 @media (min-width: 960px) {
+    
+
+        
+    
+    
   .header__shape.triangle--blue {
     -webkit-animation: squiggle-two-large 9s linear infinite;
             animation: squiggle-two-large 9s linear infinite;
@@ -406,15 +417,17 @@ input[type=checkbox]:checked ~ label .line-3 {
     </li>    
 </ul>
     <a class="cta ctaTwo" href="">Get Started</a>
+    
+    <DIV class="quoteContainer">
+<DIV class="quote">
+Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have Qball work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="text-align:right; font-weight: bold; margin: 30px 0px;"> - Regroup.com</DIV>
+</DIV>
+    </DIV>
     </DIV>
     
     
 
-<DIV class="quoteContainer">
-<DIV class="quote">
-Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have Qball work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="text-align:right; font-weight: bold; color: rgba(0, 0, 0, 0.5); margin: 30px 0px;"> - Regroup.com</DIV>
-</DIV>
-    </DIV>
+
 
     <DIV class="ourClients">
         <h2>Past Clients</h2>
