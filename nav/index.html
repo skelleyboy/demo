@@ -23,21 +23,21 @@
     .ourServices {max-width: 800px; margin: auto; padding: 30px;}
     .ourServices h2 {font-size:  42px;}
     .sampleBg  {background-image: url('images/example.png' ); height: 320px;  background-repeat: no-repeat; background-size: cover;  background-position: top center; }
-    .number {text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
+    .number {display:none;text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
     .logoContainer {padding: 10px 0px 0px 15px;}
     .logo {height:40px; cursor: pointer; z-index: 9999; position: relative}
     
-
-    .blurb {padding:30px 30px 0px; max-width:1480px; margin: auto;position: relative; z-index: 9998}
-    .blurb  img {max-width: 100%; float: left;}
+    .mainImage {max-width: 100%; margin:50px 0px 0px 0px;}
+    .blurb {padding:20px 30px 0px; max-width:1480px; margin: auto;position: relative; z-index: 9998}
+    .blurb  img {max-width: 100%; margin: 30px 0px  0px 0px;}
 body {
   background-color: #fff;
   padding: 0px;
 }
     .cta {z-index: 9998; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); position: relative; font-weight: bold; transition: all ease .2s; background: var(--primary); color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
     .cta:hover {transition: all ease .2s;color:rgba(0,0,0,.9); background:var(--primary-hover); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
-    .ctaTwo  {background: #ee0255; display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
+    .ctaTwo  {display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
 p{
   margin-top: .125rem;
   
@@ -176,10 +176,11 @@ input[type=checkbox]:checked ~ label .line-3 {
 }
 
 .header {
-  margin: 00px auto 0 auto;
+  margin: 60px auto 0 auto;
   height: 400px;
   overflow: hidden;
   text-align: center;
+    background: black;
   
 }
 
@@ -195,11 +196,12 @@ input[type=checkbox]:checked ~ label .line-3 {
   z-index: 9999;
     padding: 0px 30px;
 }
-        .stepsContainer {background: #0336ff;padding: 40px 30px 40px;}
+        .stepsContainer {background: #111; background-image: url(images/logo2.svg); background-repeat: no-repeat;
+  background-size: 2200px; background-position: top center; margin:70px 0px 0px 0px; padding: 40px 30px 40px;}
                 .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
-        .steps li {padding-bottom: 50px;font-size: 24px;}
-    .steps span {margin-top:5px; -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-sizing: border-box;font-size:32px;background: white;line-height: 30px; color:rgba(0,0,0,.9); padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
+        .steps li {padding-bottom: 50px;font-size: 20px;}
+    .steps span {margin-top:5px; border:1px solid #ccc; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  var(--primary);line-height: 30px; color:white; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
         .quoteContainer  {background: #f1f1f1; padding: 10px;}
         .quote{; font-size: 24px;
   position: relative;
@@ -226,7 +228,9 @@ input[type=checkbox]:checked ~ label .line-3 {
 @media (min-width: 1025px) {
     .ourClients li {display: inline-block; padding: 25px;}
     .quote {margin: 120px auto; line-height: 42px;}
-    .blurb div {width:500px; display: inline-block;}
+    .topContent {margin: auto; max-width: 1200px;}
+    .blurb {max-width:47%; vertical-align: top; margin: auto;  display: inline-block}
+    .mainImage {max-width: 52%;  display: inline-block}
     .blurb  img {max-width: 800px;}
     nav {text-align: center;}
     nav li {display: inline-block; border:0px;}
@@ -235,8 +239,9 @@ input[type=checkbox]:checked ~ label .line-3 {
   .header__title {
     font-size: 52px; max-width: 1280px; margin: auto;
   }
-    .steps h2 {margin-bottom: 20px;}
-    .steps li {display: inline-block; width: 320px; padding: 0px 60px; }
+    .steps {max-width: 1200px;margin:-60px  auto 60px;}
+    .steps h2 {margin: 10px 0px 20px;}
+    .steps li {display: inline-block; max-width: 33%; padding: 0px 60px; }
     .ctaTwo {margin-top: 50px;}
    
 }
@@ -306,6 +311,7 @@ input[type=checkbox]:checked ~ label .line-3 {
   }
 }
 @media (min-width: 960px) {
+    .blurb h1 {font-size: 62px;}
   .header__shape.circle--green {
     -webkit-animation: squiggle-three-large 20s linear infinite;
             animation: squiggle-three-large 20s linear infinite;
@@ -364,33 +370,39 @@ input[type=checkbox]:checked ~ label .line-3 {
 
 }
     </STYLE>
-    
+    <DIV  class="topContent">
     <div class="blurb">
-        <img src="images/sample_steve.png">
-        <DIV><h1>We make fast loading websites that are easy to use and drive sales</h1>
-    <a class="cta" href="">Contact Us</a></DIV>
+        
+        <DIV><h1>We make fast websites that are easy to use and drive sales</h1>
+    <a class="cta" href="">Contact Us</a>
+        
+    
+        
+        </DIV>
+        
     </div>
-    <header class="header">
-  
-        <h1 class="header__title">We guide you through our simple three step process </h1>
-</header>
+    
+    <img class="mainImage" src="images/sample_steve.png">
+        
+    </DIV>
+
     
 <DIV class="stepsContainer">
 <ul class="steps">
     <li>
         <SPAN>1</SPAN>
-        <h2>Discover</h2>
-    <P>Tell us all about your brand or idea</P>
+        <h2>Simple Pricing</h2>
+    <P>$100 deposit and $20/mo. for hosting</P>
     </li>
             <li>
         <SPAN>2</SPAN>
-        <h2>Design</h2>
-    <P>We bring your project ideas to life</P>
+        <h2>Our Garuntee</h2>
+    <P>If you aren't satisfied we will refund your full deposit</P>
     </li>
                     <li>
         <SPAN>3</SPAN>
-        <h2>Deliver</h2>
-    <P>We monitor your traffic and share the results</P>
+        <h2>Cancel Anytime</h2>
+    <P>No lengthy contracts to keep you locked in</P>
     </li>    
 </ul>
     <a class="cta ctaTwo" href="">Get Started</a>
