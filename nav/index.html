@@ -27,7 +27,7 @@
     .number {display:none;text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
     .logoContainer {padding: 10px 0px 0px 15px;}
-    .logo {height:40px; cursor: pointer; position: relative}
+    .logo {height:40px; cursor: pointer; position: relative; z-index: 99999;}
     
     .mainImage {max-width: 100%; margin:50px 0px 0px 0px;}
     .blurb {padding:20px 30px 0px; max-width:1480px; margin: auto;position: relative; }
@@ -50,9 +50,10 @@ input[type=checkbox] {
   display: none;
 }
 
+    nav {display: none;}
 nav ul {
+    height: 0px;
   max-height: 0px;
-  overflow: hidden;
   list-style: none;
   background:rgba(0,0,0,1);
 }
@@ -72,12 +73,13 @@ nav li:last-of-type {
 nav li a {
   text-decoration: none;
   color:#fff;
-    position: relative;
-    z-index: 9999;
+    
+   
 }
 nav li a:hover{
   text-decoration: underline;
 }
+    input[type=checkbox]:checked ~ nav {display: block;}
 
 input[type=checkbox]:checked ~ nav ul {
   height: auto;
@@ -200,14 +202,14 @@ input[type=checkbox]:checked ~ label .line-3 {
   z-index: 9999;
     padding: 0px 30px;
 }
-        .stepsContainer {background: #101010; background-image: url(images/logo2.svg); background-repeat: no-repeat;
-  background-size: 2200px; background-position: top center; margin:70px 0px 0px 0px; padding: 40px 30px 40px;}
+        .stepsContainer {background: #010101; background-image: url(images/logobg.svg); background-repeat: repeat;
+  background-size:2000px; background-position: top center; margin:70px 0px 0px 0px; padding: 40px 30px 40px;}
                 .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
         .steps li {padding-bottom: 50px;font-size: 20px;}
     .steps span {margin-top:5px; border:1px solid #ccc; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  #666;line-height: 30px; color:white; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
         .steps span:hover {margin-top: -10px; background: #999;}
-        .quoteContainer  {background:rgba(0,0,0,.5); padding: 10px; margin-top: 60px;}
+        .quoteContainer  {background:rgba(0,0,0,1); padding: 10px; margin-top: 60px;}
           .quote img {max-width: 150px;}
         .quote{color:white;z-index: 2; position: absolute;font-size: 18px;
           
@@ -230,17 +232,17 @@ input[type=checkbox]:checked ~ label .line-3 {
     .ourClients  ul {list-style: none;}
     .ourClients li {margin:30px 0px; vertical-align: top;}
     .ourClients img {max-width: 180px}
-    .ourClients h2 {font-size:  42px; border-top:1px solid #eee;margin-top: 0px; padding-top:60px;}
+    .ourClients h2 {font-size:  42px; padding:0px;}
 
 
 @media (min-width: 1025px) {
     .ourClients li {display: inline-block; padding: 25px;}
-    .quoteContainer {border: 40px solid black;}
-    .quote {margin: 120px auto; line-height: 42px;font-size: 32px;}
+    .quoteContainer {border: 40px solid #111;}
+    .quote {margin: 160px auto; line-height: 42px;font-size: 32px;}
     .quote::before {
-color: #727272;
+color: #333;
   left: -3.5rem;
-  top: -1.7rem;
+  top: -0rem;
 
 }
     .topContent {margin: auto; max-width: 1200px;}
@@ -256,7 +258,7 @@ color: #727272;
   .header__title {
     font-size: 52px; max-width: 1280px; margin: auto;
   }
-    .stepsContainer {margin: 100px 20px;}
+    .stepsContainer {margin: 100px 20px 70px;}
     .steps {max-width: 1200px;margin:-60px  auto 60px;}
     .steps h2 {margin: 10px 0px 20px;}
     .steps li {display: inline-block; max-width: 33%; padding: 0px 60px; }
