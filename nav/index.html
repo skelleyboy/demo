@@ -27,16 +27,16 @@
     .number {display:none;text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
     .logoContainer {padding: 10px 0px 0px 15px;}
-    .logo {height:40px; cursor: pointer; z-index: 9999; position: relative}
+    .logo {height:40px; cursor: pointer; position: relative}
     
     .mainImage {max-width: 100%; margin:50px 0px 0px 0px;}
-    .blurb {padding:20px 30px 0px; max-width:1480px; margin: auto;position: relative; z-index: 9998}
+    .blurb {padding:20px 30px 0px; max-width:1480px; margin: auto;position: relative; }
     .blurb  img {max-width: 100%; margin: 30px 0px  0px 0px;}
 body {
   background-color: #fff;
   padding: 0px;
 }
-    .cta {z-index: 9998; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); position: relative; font-weight: bold; background: var(--primary); color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
+    .cta { position: relative; font-weight: bold; background: var(--primary); color:white; text-decoration: none; font-size: 24px; margin: 30px 0px 0px; display: inline-block; padding: 10px 30px; border-radius: 500px;}
     .cta:hover {color:rgba(0,0,0,.9); background:var(--primary-hover); -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1); box-shadow: 0px 0px 0px 10px rgba(0,0,0,.1);}
     .ctaTwo  {display: block; max-width: 280px; margin: -0px auto 0px; text-align: center;}
 p{
@@ -54,11 +54,11 @@ nav ul {
   max-height: 0px;
   overflow: hidden;
   list-style: none;
-  background:rgba(0,0,0,.9);
+  background:rgba(0,0,0,1);
 }
 
 nav li {
-  border-bottom: .18rem solid #333;
+  border-bottom: 1px solid #333;
   color: #fff;
   font-size: 28px;
   padding: 15px;
@@ -82,11 +82,15 @@ nav li a:hover{
 input[type=checkbox]:checked ~ nav ul {
   height: auto;
   max-height: 600px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 99
 }
 
 .hamburger {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 18px;
   right: 13px;
   height: 40px;
@@ -196,17 +200,19 @@ input[type=checkbox]:checked ~ label .line-3 {
   z-index: 9999;
     padding: 0px 30px;
 }
-        .stepsContainer {background: #111; background-image: url(images/logo2.svg); background-repeat: no-repeat;
+        .stepsContainer {background: #101010; background-image: url(images/logo2.svg); background-repeat: no-repeat;
   background-size: 2200px; background-position: top center; margin:70px 0px 0px 0px; padding: 40px 30px 40px;}
                 .steps { color:#fff; list-style: none; text-align: center; margin-top: -65px; vertical-align: top;}
         .steps h2 {font-size: 32px;margin:0px 0px 10px;}
         .steps li {padding-bottom: 50px;font-size: 20px;}
     .steps span {margin-top:5px; border:1px solid #ccc; -webkit-box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-shadow: 0px 0px 0px 10px rgba(255,255,255,.1); box-sizing: border-box;font-size:32px;background:  #666;line-height: 30px; color:white; padding: 10px;margin-bottom:20px; height:50px; width:50px; border-radius: 500px; display: inline-block;}
         .steps span:hover {margin-top: -10px; background: #999;}
-        .quoteContainer  {background:rgba(17,17,17,.9); padding: 10px; margin-top: 60px;}
+        .quoteContainer  {background:rgba(0,0,0,.5); padding: 10px; margin-top: 60px;}
+          .quote img {max-width: 150px;}
         .quote{color:white;z-index: 2; position: absolute;font-size: 18px;
+          
   position: relative;
-  margin: 4rem 2rem 4rem 4rem;
+  margin: 30px;
     max-width: 850px;
 }
 .quote::before {
@@ -215,7 +221,7 @@ input[type=checkbox]:checked ~ label .line-3 {
   left: -3.5rem;
   top: -4.7rem;
   font-size: 18rem;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255,255, 255, 0.2);
     font-family: times;
     z-index: -1;
 }
@@ -231,6 +237,12 @@ input[type=checkbox]:checked ~ label .line-3 {
     .ourClients li {display: inline-block; padding: 25px;}
     .quoteContainer {border: 40px solid black;}
     .quote {margin: 120px auto; line-height: 42px;font-size: 32px;}
+    .quote::before {
+color: #727272;
+  left: -3.5rem;
+  top: -1.7rem;
+
+}
     .topContent {margin: auto; max-width: 1200px;}
     .blurb {max-width:47%; vertical-align: top; margin: auto;  display: inline-block}
     .blurb h1:hover {margin-top: -10px;}
@@ -244,6 +256,7 @@ input[type=checkbox]:checked ~ label .line-3 {
   .header__title {
     font-size: 52px; max-width: 1280px; margin: auto;
   }
+    .stepsContainer {margin: 100px 20px;}
     .steps {max-width: 1200px;margin:-60px  auto 60px;}
     .steps h2 {margin: 10px 0px 20px;}
     .steps li {display: inline-block; max-width: 33%; padding: 0px 60px; }
@@ -420,7 +433,7 @@ input[type=checkbox]:checked ~ label .line-3 {
     
     <DIV class="quoteContainer">
 <DIV class="quote">
-Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have Qball work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="text-align:right; font-weight: bold; margin: 30px 0px;"> - Regroup.com</DIV>
+Extremely easy to work with, receptive to feedback, and able to design in any style or format. 10 out of 10.  We were fortunate to have AYR work with us and I wouldn't hesitate to work with them again.  <DIV STYLE="text-align:right; font-weight: bold; margin: 30px 0px;"> <img src="images/regroup.png"></DIV>
 </DIV>
     </DIV>
     </DIV>
