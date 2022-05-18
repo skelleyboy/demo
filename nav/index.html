@@ -27,7 +27,7 @@
     .number {display:none;text-align: right; background: rgba(0,0,0,.9); font-size: 20px; color:white; padding:15px; position: fixed; z-index: 9999; bottom:0px; left:0px; right:0px;}
     .number a {color:#fff!important; font-weight: bold;}
     .logoContainer {padding: 10px 0px 0px 15px;}
-    .logo {height:40px; cursor: pointer; position: relative; z-index: 99999;}
+    .logo {height:40px; cursor: pointer; position: relative;}
     
     .mainImage {max-width: 100%; margin:50px 0px 0px 0px;}
     .blurb {padding:20px 30px 0px; max-width:1480px; margin: auto;position: relative; }
@@ -170,7 +170,7 @@ input[type=checkbox]:checked ~ label .line-3 {
 </div>
 <div class="page-content">
   <!--<h1 class="logo">Your Company Logo</h1> <div class="phone">1.555.5555</p></div>-->
-    <div class="logoContainer"><a href="/"><img class="logo" src="images/logo2.svg"></a>  </div>
+    <div class="logoContainer"><a href="/"><img class="logo" src="images/logo.svg"></a>  </div>
 </div>
 
 
@@ -353,6 +353,7 @@ color: #333;
   -webkit-animation: squiggle-four 23s linear infinite;
           animation: squiggle-four 23s linear infinite;
 }
+        .ctaOne {display: none;}
 @media (min-width: 480px) {
   .header__shape.trap--yellow {
     -webkit-animation: squiggle-four-medium 23s linear infinite;
@@ -360,6 +361,7 @@ color: #333;
   }
 }
 @media (min-width: 960px) {
+    .ctaOne{display: block; position: absolute; top: -13px; right:70px; font-size: 16px;}
   .header__shape.trap--yellow {
     -webkit-animation: squiggle-four-large 23s linear infinite;
             animation: squiggle-four-large 23s linear infinite;
@@ -396,6 +398,7 @@ color: #333;
 
 }
     </STYLE>
+    <a class="cta ctaOne" href="">Contact Us</a>
     <DIV  class="topContent">
     <div class="blurb">
         
